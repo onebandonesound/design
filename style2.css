@@ -1,0 +1,207 @@
+*,
+:root {
+  --trans: all 400ms;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://tinyurl.com/2p8k9dr3);
+  background-color: hsl(0, 100%, 73%);
+}
+body,
+main {
+  margin
+  height: 100%;
+}
+.container {
+  font-family: "Poppins";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  9rem;
+  transition: var(--trans);
+}
+.container .content {
+  display: flex;
+}
+.container .content .word {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:white;
+  margin: 3rem;
+}
+.container .content .word h2 {
+  font-weight: 700;
+  font-size: 3.2em;
+  margin-bottom: 2rem;
+}
+.container .content .word p {
+  font-size: 17px;
+  font-weight: 400;
+}
+.container .content .form {
+  flex: 1;
+  color:white;
+}
+ .form .ad {
+  background:  hsl(248, 32%, 49%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 4rem;
+  border-radius: 10px;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 7px 2px rgba(0, 0, 0, 0.204);
+}
+.container .content .form .ad p {
+  font-weight: 700;
+}
+.container .content .form .ad p span {
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (max-width: 501px) {
+  .container .content .form .ad {
+    text-align: center;
+    padding: 15px;
+    transition: 400ms;
+  }
+}
+.container .content .form .contact-form {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.4rem;
+  border-radius: 10px;
+  box-shadow:  0 7px 2px rgba(0, 0, 0, 0.204);
+  transition: 400ms;
+}
+.container .content .form .contact-form .input-control {
+  width: 100%;
+  transition: 400ms;
+  position: relative;
+}
+.container .content .form .contact-form .input-control input {
+  padding: 23px 2rem;
+  color:black;
+  width: 100%;
+  margin-bottom: 1.3rem;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 7px;
+  border: 1px solid hsl(246, 25%, 77%);
+  transition: var(--trans);
+}
+
+.container .content .form .contact-form .input-control input[type=text] {
+  text-transform: capitalize;
+}
+.input-control input:focus:invalid~.error {
+  position: relative;
+  margin: 1.5rem;
+}
+.input-control input:focus:invalid {
+  background: url(https://tinyurl.com/3yvp7vds) no-repeat 95% 50%;
+  background-size: 25px;
+  border: 2px solid hsl(0, 100%, 74%);
+  transition: border 10ms;
+}
+.input-control input:focus:invalid~.error::after {
+  content: attr(data-error);
+  position: absolute;
+  bottom: 0;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  right: 0;
+  padding-bottom: 1rem;
+  color: hsl(0, 100%, 74%);
+}
+.container .content .form .contact-form .btn {
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow:  0 4px 2px hsl(154, 59%, 43%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--trans);
+}
+.container .content .form .contact-form .btn #submit {
+  border: none;
+  background: none;
+  font-weight: 600;
+  padding-top: 1.5rem;
+  color: white;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  }
+.container .content .form .contact-form .btn:hover,
+.container .content .form .contact-form .btn:active {
+  opacity: 0.6;
+  cursor: pointer;
+  transition: var(--trans);
+}
+.container .content .form .form-footer {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+.container .content .form .form-footer p {
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  font-weight: 500;
+}
+.container .content .form .form-footer p a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  text-decoration: none;
+}
+@media (max-width: 501px) {
+  .container .content .form .form-footer {
+    text-align: center;
+    transition: var(--trans);
+  }
+}
+@media (max-width: 950px) {
+  .container .content {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container .content .word {
+    text-align: center;
+  }
+  .container .content .word h2 {
+    font-size: 2.3rem;
+  }
+  .container .content .word p {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 2rem;
+    transition: var(--trans);
+  }
+}
+@media (max-width: 375px) {
+  body {
+    background-image: url(https://tinyurl.com/bdhbrxcp);
+    height: auto;
+  }
+  .container {
+    padding: 0 10px;
+    transition: var(--trans);
+  }
+  .form .ad{
+    margin-left: 40px;
+    transition: all 400ms;
+  }
+}
